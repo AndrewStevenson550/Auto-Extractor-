@@ -12,10 +12,11 @@ I hope the comments should help you with the process of this automated python fi
 class Scrap():
     def __init__(self, url, file_name, element, h_class):
       
-        self.url = url
-        self.file_name = file_name
-        self.element = element
-        self.h_class = h_class
+        self.url = url # URL of your chose
+        self.file_name = file_name # What the file will be called when you run (make sure you add .txt or what you want)
+        self.element = element # What HTML element you are looking for
+        self.h_class = h_class # The class of that same html element
+        #IMPORTANT: please only change the variables at the bottom of the page, there will be a marker
         pass
 
     def scrapProcces(self):
@@ -63,5 +64,5 @@ class Scrap():
 
 
 my_url = "https://www.asus.com/us/laptops/for-creators/all-series/"
-start = Scrap(url=my_url, element="div", h_class="seriesRightBody LevelTwoSeriesPage__seriesRightBody__2DRzz", file_name="new_data.txt")
+start = Scrap(url=my_url, element="div", h_class="seriesRightBody LevelTwoSeriesPage__seriesRightBody__2DRzz", file_name="new_data.txt") #THIS IS WHERE YOU CHANGE THE VARS
 start.scrapProcces()
