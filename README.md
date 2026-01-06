@@ -7,6 +7,7 @@ To use this automation tool
 
 * Download the Code
 * Open the code in an IDE of your choice
+* Download (using pip) the requests and bs4 package
 * Change the variables such as h_class, element, url, and file_name to your liking (to what you want them to do)
 * Run the code and find your new file with your scrapped info! You may need to run os.getcwd() to find where the file will be.
 
